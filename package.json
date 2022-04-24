@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/FernandoIgorrr/javascriptLearn#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "jquery": "^3.6.0"
   }
 }

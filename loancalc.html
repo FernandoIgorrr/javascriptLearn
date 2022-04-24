@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/loancalc.js"></script>
+    <link rel="stylesheet" href="css/loancalc.css">
+    <title>JavaScript Loan Calculator</title>
+</head>
+<body>
+        <fieldset class="half-page no-border">
+            <legend>
+                <strong>Enter Loan Data:</strong>
+            </legend>
+            <div id="organiseLoanData">
+                <label class="fields-align" for="loan"> Amounth of the loan ($):</label>
+                <input class="width-150" type="number" name="loan" id="loan">
+                <br>
+                <label class="fields-align" for="annual-interest"> Annual interest (%):</label> 
+                <input class="width-150" type="number" name="annual-interest" id="annual-interest">
+                <br>
+                <label class="fields-align" for="years">Repayment period (y):</label>
+                <input class="width-150" type="number" name="years" id="years">
+                <br>
+                <label class="fields-align" for="zipcode"> Zipcode (to find lenders):</label>
+                <input class="width-150" type="number" name="zipcode" id="zipcode">
+                <br>
+                <label class="fields-align">
+                    <strong>Approximate Payments:</strong>
+                </label>
+                <button name="button" id="button">Calculate</button>
+            </div>
+        </fieldset>
+    <div>
+        <h1 id="loan-val1"></h1>
+        <h1 id="loan-val2"></h1>
+        <h1 id="loan-val3"></h1>
+    </div>
+</body>
+</html>

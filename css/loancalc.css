@@ -1,0 +1,17 @@
+label.fields-align{
+    display: inline-block;
+    width: 220px;
+    
+}
+.half-page{
+    display: inline-block;
+    width: 31%;
+}
+
+input.width-150{
+    width: 150px;
+}
+
+.no-border{
+    border: none;
+}

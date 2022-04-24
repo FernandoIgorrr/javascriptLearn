@@ -49,18 +49,13 @@ function show(e, reflow){
 }
 
 function paintBlue(e){
-    if(!e.className){
-        e.className = "background-blue";
-    }
-    else{
-        e.className += " background-blue";
-    }
+    e.addClass("background-blue");
 }
 
 function myButton(e, reflow){
-    if(reflow){
-        var button  = document.createElement("button");
+    var button  = document.createElement("button");
         button.id   = "button";
+    if(reflow){
         button.onclick      = () => {
             hide(e,true);
             button.remove();
@@ -69,8 +64,6 @@ function myButton(e, reflow){
         button.textContent  = "HIDE";
     }
     else{
-        var button  = document.createElement("button");
-        button.id   = "button";
         button.onclick      = () => {
             e.style.display = "block";
             show(e,true);
